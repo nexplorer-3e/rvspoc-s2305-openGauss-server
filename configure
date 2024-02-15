@@ -3282,6 +3282,10 @@ if [ "$PLATFORM_ARCH"X = "loongarch64"X ]; then
     enable_mot=no
 fi
 
+if [ "$PLATFORM_ARCH"X = "riscv64"X ]; then
+    enable_mot=no
+fi
+
 if test "$enable_multiple_nodes" = yes; then
 
   enable_mot=no
